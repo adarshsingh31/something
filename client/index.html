@@ -2,12 +2,174 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>client</title>
+
+    <meta
+      name="description"
+      content="A modern and responsive web application landing page."
+    />
+
+    <title>MyApp | Modern Web Application</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="#" class="logo"> MyApp </a>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#login" class="btn"> Get Started </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="badge"> Modern • Fast • Secure </span>
+
+            <h1>
+              Build Something
+              <span>Amazing.</span>
+            </h1>
+
+            <p>
+              A modern web application designed to help you manage your work,
+              improve productivity, and achieve your goals faster.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#features" class="btn"> Explore Features </a>
+
+              <a href="#about" class="btn secondary"> Learn More </a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-header">
+              <span>Dashboard</span>
+              <span>●</span>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <h3>1,250+</h3>
+                <p>Users</p>
+              </div>
+
+              <div class="stat">
+                <h3>98%</h3>
+                <p>Success</p>
+              </div>
+
+              <div class="stat">
+                <h3>24/7</h3>
+                <p>Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-heading">
+            <span class="badge">Features</span>
+
+            <h2>Everything you need</h2>
+
+            <p>
+              Powerful features designed to make your experience simple and
+              productive.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">⚡</div>
+
+              <h3>Fast Performance</h3>
+
+              <p>
+                Experience a fast and responsive application built for modern
+                users.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🔒</div>
+
+              <h3>Secure</h3>
+
+              <p>Your data is protected using modern security practices.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🚀</div>
+
+              <h3>Easy to Use</h3>
+
+              <p>
+                A simple and intuitive interface that anyone can understand.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container about-content">
+          <div>
+            <span class="badge">About Us</span>
+
+            <h2>Built for the future.</h2>
+          </div>
+
+          <p>
+            We create modern digital experiences that combine beautiful design,
+            powerful technology, and simple user experiences.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="contact" class="cta">
+        <div class="container">
+          <h2>Ready to get started?</h2>
+
+          <p>Start building your experience today.</p>
+
+          <a href="#" class="btn"> Get Started </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 MyApp. All rights reserved.</p>
+
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
