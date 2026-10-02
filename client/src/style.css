@@ -1,0 +1,261 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  padding: 0 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #111827;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 60px 20px;
+
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+
+  color: #d1d5db;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+  display: inline-block;
+
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #38bdf8;
+  color: #0f172a;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+
+  padding: 60px 0;
+}
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 25px;
+
+  background: #111827;
+  color: white;
+
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    height: auto;
+    padding: 20px;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
